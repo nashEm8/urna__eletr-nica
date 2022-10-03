@@ -1,0 +1,202 @@
+@keyframes pisca{
+	0%{ opacity: 0.2; }
+	50%{ opacity: 1; }
+	100%{ opacity: 0.2; }
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: arial;
+}
+
+.urna{
+	display: flex;
+	background-color: #dbd5c9;
+	padding: 30px;
+	margin-top: 50px;
+}
+
+.tela{
+	width: 500px;
+	height: 320px;
+	background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+	border: 2px solid #555;
+	display: flex;
+	flex-direction: column;
+}
+
+.teclado{
+	background-color: #403A3A;
+	margin-left: 20px;
+}
+
+.teclado-linha{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.teclado-botao{
+	display: flex;
+	align-items: center;
+	width: 55px;
+	height: 40px;
+	background-color: #000;
+	color: #fff;
+	font-size: 22px;
+	margin: 8px; 
+	cursor: pointer;
+	box-shadow: 3px 3px 0 #555;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.teclado-linha .btn:nth-child(1){
+	background-color: #fff;
+	color: #000;
+	font-size: 15px;
+	height: 30px;
+	padding: 5px 10px 0 10px;
+}
+
+.teclado-linha .btn:nth-child(2){
+	background-color: #DC591E;
+	color: #000;
+	font-size: 15px;
+	height: 30px;
+	padding: 5px 10px 0 10px;
+}
+
+.teclado-linha .btn:nth-child(3){
+	background-color: #46B16F;
+	color: #000;
+	width: 90px;
+	height: 40px;
+	font-size: 15px;
+	padding: 5px 2px 0 2px;
+}
+
+.btn{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.instrucao-1{
+	display: flex;
+	flex: 1;
+}
+
+.instrucao-left{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding-left: 20px;
+}
+
+.texto-voto{
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+.texto-cargo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+
+.numero-voto{
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+.numero{
+	display: inline-block;
+	width: 30px;
+	height: 40px;
+	border: 1px solid #000;
+	line-height: 40px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.pisca{
+	animation-name: pisca;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+}
+
+.infor-candidato{
+	display:flex;
+	flex: 1;
+	line-height: 30px;
+}
+
+.instrucao-right{
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	width: 90px;
+}
+
+.instrucao-right-img{
+	border: 1px solid #000;
+	background-color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+
+.instrucao-right-img img{
+	width: 95%;
+}
+
+.instrucao-right-img.small{
+	width: 80%;
+	font-size: 12px;
+}
+
+.instrucao-2{
+	height: 50px;
+	font-size: 14px;
+	border-top: 2px solid #000;
+	padding: 2px 0 0 10px;
+}
+
+.aviso--votoBN{
+	width: 100%;
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.aviso--gigante{
+	flex:1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.informacoes-candidatos{
+	display: flex;
+	margin-top: 15px;
+}
+
+.vereador, .prefeito{
+	background-color: #ccc;
+	padding: 10px;
+	margin: 0 40px;
+}
