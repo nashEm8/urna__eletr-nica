@@ -1,4 +1,4 @@
-# urna__eletr-nica
+# Urna eletrônica
 
 Já que nesses últimos dias as atenções foram voltadas para eleições.. 
 aproveitei para fazer um projetinho Javascript com essa temática, para aperfeiçoar meus conhecimentos na linguagem :') <br>
